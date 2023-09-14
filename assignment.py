@@ -38,7 +38,7 @@ def resolve_url(token):
 # Example usage:
 original_url = os.getenv('ORG_URL')
 shortened_url = shorten_url(original_url)
-print(f"Shortened URL: {shortened_url}")
+print("Shortened URL: ",shortened_url)
 
 # Simulate a click on the shortened URL
 resolved_url = resolve_url(shortened_url.split("/")[-1])
