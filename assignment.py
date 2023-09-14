@@ -23,7 +23,7 @@ def shorten_url(original_url):
     
     # Store the mapping between token and original URL
     url_mappings[token] = original_url
-    short_url = f"https://yourdomain.com/{token}"
+    short_url = "https://yourdomain.com/%s"%(token)
     
     return short_url
 
