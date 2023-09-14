@@ -23,8 +23,9 @@ def shorten_url(original_url):
     
     # Store the mapping between token and original URL
     url_mappings[token] = original_url
+    short_url = f"https://yourdomain.com/{token}"
     
-    return f"https://yourdomain.com/{token}"
+    return short_url
 
 def resolve_url(token):
     """Resolve a hashed URL back to the original URL."""
