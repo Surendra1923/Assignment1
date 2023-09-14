@@ -2,6 +2,7 @@
 import hashlib
 import random
 import string
+import os
 
 # Dictionary to store mappings between hashed and original URLs
 url_mappings = {}
