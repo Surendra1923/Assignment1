@@ -7,7 +7,6 @@ import string
 url_mappings = {}
 
 def generate_random_string(length=8):
-    """Generate a random string of alphanumeric characters."""
     characters = string.ascii_letters + string.digits
     return ''.join(random.choice(characters) for _ in range(length))
 
@@ -20,8 +19,6 @@ def hash_url(url):
 def shorten_url(original_url):
     """Shorten a URL by hashing and storing it."""
     hashed_url = hash_url(original_url)
-    
-    # Generate a unique token for the shortened URL (for privacy and security)
     token = generate_random_string()
     
     # Store the mapping between token and original URL
@@ -32,16 +29,13 @@ def shorten_url(original_url):
 def resolve_url(token):
     """Resolve a hashed URL back to the original URL."""
     original_url = url_mappings.get(token)
-    if original_url:
-        # Implement click tracking logic here
-        # Log the click, update stats, etc.
+    if original_
         return original_url
     else:
         return None
 
 # Example usage:
 original_url = "https://www.youtube.com/watch?v=Ep_aoYCMhxM&t=15s"
-# original_url="https://www.google.com/search?q=url+hashing+system&rlz=1C1GCEA_enIN1030IN1030&oq=url+hasing+&aqs=chrome.1.69i57j0i13i512j0i22i30l3j0i15i22i30j0i22i30l4.4907j0j15&sourceid=chrome&ie=UTF-8"
 shortened_url = shorten_url(original_url)
 print(f"Shortened URL: {shortened_url}")
 
