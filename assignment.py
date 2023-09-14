@@ -43,6 +43,6 @@ print(f"Shortened URL: {shortened_url}")
 # Simulate a click on the shortened URL
 resolved_url = resolve_url(shortened_url.split("/")[-1])
 if resolved_url:
-    print(f"Resolved URL: {resolved_url}")
+    print("Resolved URL: ",resolved_url)
 else:
     print("URL not found.")
