@@ -11,7 +11,7 @@ functions and packages used in assignment.py
 FUNCTIONS:
 generate_random_string():  it will return the a random end string
 
-hash_url(url) : this function takes the url as param and it will do the hasing funtion and it return the url
+hash_url(url) : this function takes the url as param , hash a url using SHA-256. and it return the url
 
 shorten_url(original_url) :  this funtion takes the original url , from the user it will shorten the url with help of generate_random_sting() funtion 
 
