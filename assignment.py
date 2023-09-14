@@ -35,7 +35,7 @@ def resolve_url(token):
         return None
 
 # Example usage:
-original_url = "https://www.youtube.com/watch?v=Ep_aoYCMhxM&t=15s"
+original_url = os.getenv('ORG_URL')
 shortened_url = shorten_url(original_url)
 print(f"Shortened URL: {shortened_url}")
 
