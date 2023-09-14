@@ -30,7 +30,7 @@ def shorten_url(original_url):
 def resolve_url(token):
     """Resolve a hashed URL back to the original URL."""
     original_url = url_mappings.get(token)
-    if original_
+    if original_url
         return original_url
     else:
         return None
